@@ -17,7 +17,7 @@ export class App implements OnInit {
     private healthCheckService: HealthCheckService
   ) {}
 
-  protected readonly title = signal('BykerZ');
+  protected readonly title = signal('Octane');
   ngOnInit(): void {
     this.authService.tryAutoSignIn();
     // Start health check to keep Render service alive

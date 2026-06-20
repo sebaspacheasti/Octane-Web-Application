@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  platformProviderApiBaseUrl: "https://bykerz-backend.onrender.com/api/v1",
+  platformProviderApiBaseUrl: "https://octane-backend.onrender.com/api/v1",
   platformProviderAssignmentsEndpointPath: '/assignments',
   platformProviderMechanicEndpointPath: '/mechanic',
   platformProviderOwnerEndpointPath: '/owner',

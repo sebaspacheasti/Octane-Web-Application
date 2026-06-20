@@ -2,7 +2,7 @@ import {Component, inject, Input} from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 import {
-  NotificationListComponent
+ NotificationListComponent
 } from '@app/notifications/presentation/components/app-notification-list/app-notification-list';
 
 import {AssignmentsStore} from "@app/assignments/application/assigments.store";
@@ -14,7 +14,7 @@ import {TranslatePipe} from '@ngx-translate/core';
   selector: 'app-assign-vehicle-card',
   imports: [
     RouterLink,
-    NotificationListComponent,
+    // NotificationListComponent,
     TranslatePipe
   ],
   templateUrl: './assign-vehicle-card.html',

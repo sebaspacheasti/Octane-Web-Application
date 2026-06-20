@@ -162,10 +162,10 @@ export class WebSocketService {
   private showBrowserNotification(notification: NotificationEntity) {
     if ('Notification' in window) {
       if (Notification.permission === 'granted') {
-        const iconUrl = '/assets/icons/alert.png';
+        //const iconUrl = '/assets/icons/alert.png';//
         new Notification(notification.title, {
           body: notification.message,
-          icon: iconUrl
+         // icon: iconUrl//
         }).onerror = () => {
           new Notification(notification.title, {
             body: notification.message

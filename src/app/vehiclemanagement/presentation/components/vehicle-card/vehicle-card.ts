@@ -17,7 +17,7 @@ import {TranslatePipe} from '@ngx-translate/core';
   imports: [
     NgOptimizedImage,
     RouterLink,
-    NotificationListComponent,
+    // NotificationListComponent,
     TranslatePipe
   ],
   templateUrl: './vehicle-card.html',
