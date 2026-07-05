@@ -1,4 +1,4 @@
-import {Expense} from '@app/shared/domain/model/expenseDELETETHIS.entity';
+
 
 export class CompletedMaintenance {
   maintenanceId: number;
@@ -9,7 +9,7 @@ export class CompletedMaintenance {
   vehicleName: string;
   maintenanceDetails: string;
   maintenanceDescription: string;
-  expenses : Expense[];
+
 
   constructor(
     maintenanceId: number,
@@ -20,7 +20,7 @@ export class CompletedMaintenance {
     vehicleName: string,
     maintenanceDetails: string,
     maintenanceDescription: string,
-    expenses: Expense[]
+
   ) {
     this.maintenanceId = maintenanceId;
     this.maintenanceDate = maintenanceDate;
@@ -30,7 +30,7 @@ export class CompletedMaintenance {
     this.vehicleName = vehicleName;
     this.maintenanceDetails = maintenanceDetails;
     this.maintenanceDescription = maintenanceDescription;
-    this.expenses = expenses;
+
   }
 
 }

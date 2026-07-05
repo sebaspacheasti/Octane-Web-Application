@@ -24,33 +24,6 @@ import {CommonModule} from '@angular/common';
           <p class="mb-1"><strong>
             Gastos:
           </strong></p>
-          <div class="bg-white rounded-2xl text-black p-4">
-            <table mat-table [dataSource]="maintenance.expenses" class="mat-elevation-z8">
-
-              <ng-container matColumnDef="Name">
-                <th mat-header-cell *matHeaderCellDef> Name </th>
-                <td mat-cell *matCellDef="let expense"> {{ expense.expenseName}} </td>
-              </ng-container>
-
-              <ng-container matColumnDef="Amount">
-                <th mat-header-cell *matHeaderCellDef> Amount </th>
-                <td mat-cell *matCellDef="let expense"> {{ expense.expenseAmount}} </td>
-              </ng-container>
-
-              <ng-container matColumnDef="UnitPrice">
-                <th mat-header-cell *matHeaderCellDef> Unit Price </th>
-                <td mat-cell *matCellDef="let expense"> {{ expense.expenseUnitPrice}} </td>
-              </ng-container>
-
-              <ng-container matColumnDef="TotalPrice">
-                <th mat-header-cell *matHeaderCellDef> Total Price </th>
-                <td mat-cell *matCellDef="let expense"> {{ expense.expenseTotalPrice}} </td>
-              </ng-container>
-
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
-          </div>
 
 
         </div>

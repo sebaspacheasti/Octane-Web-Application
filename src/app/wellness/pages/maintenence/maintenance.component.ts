@@ -114,7 +114,7 @@ export class MaintenanceComponent {
     { maintenanceId: 2, maintenanceDate: new Date(), maintenanceAddress: "Av. Rafael Escardo 201", mechanicName: "Hernandez Hernandez", vehicleName: "Honda CB300 Twister", maintenanceReason: "Revisión general" }
   ];
   completedMaintenances: CompletedMaintenance[] = [
-    { maintenanceId: 1, maintenanceDate: new Date(), maintenanceAddress: "Talambo 135", mechanicName: "Hernandez Hernandez", ownerName: "Luis Torres", vehicleName: "Honda CB300 Twister", maintenanceDetails: "Se cambiaron los neumáticos delanteros.", maintenanceDescription: "Piso una llave.", expenses: [] }
+    { maintenanceId: 1, maintenanceDate: new Date(), maintenanceAddress: "Talambo 135", mechanicName: "Hernandez Hernandez", ownerName: "Luis Torres", vehicleName: "Honda CB300 Twister", maintenanceDetails: "Se cambiaron los neumáticos delanteros.", maintenanceDescription: "Piso una llave."}
   ];
   protected readonly format = format;
   openDialog(maintenance: CompletedMaintenance) { this.dialog.open(MaintenanceDialogComponent, { data: { maintenance } }); }
