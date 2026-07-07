@@ -42,7 +42,7 @@
       "subtitle": "Overview of your vehicles and services",
       "assignedMechanic": "Assigned Mechanic",
       "myVehicles": "My Vehicles",
-      "recentExpenses": "Recent Expenses",
+      "wellnessSummaries": "Wellness Summaries",
       "scheduledMaintenances": "Scheduled Maintenances"
     },
     "mechanic": {
@@ -115,7 +115,8 @@
       "fuelTank": "Fuel Tank",
       "weight": "Weight",
       "consumption": "Consumption",
-      "connectivity": "Connectivity"
+      "connectivity": "Connectivity",
+      "wellnessSummary": "Wellness Summary"
     }
   },
   "assignments": {

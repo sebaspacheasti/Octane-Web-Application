@@ -1,0 +1,47 @@
+.wellness-card {
+  width: 100%;
+  min-height: 72px;
+  height: 72px;
+
+  background-color: #ffffff;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+mat-card-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.vehicle-model {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+
+  white-space: nowrap;
+}
+
+.separator {
+  font-size: 16px;
+  font-weight: 600;
+  color: #616161;
+}
+
+.summary {
+  flex: 1;
+
+  font-size: 15px;
+  color: #616161;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

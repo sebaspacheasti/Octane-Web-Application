@@ -71,5 +71,26 @@
         </div>
       </div>
     </div>
+    <div class="wellness-card" *ngIf="wellnessSummary">
+      <div class="wellness-header">
+        <div class="wellness-icon">
+          🩺
+        </div>
+
+        <div class="wellness-title-group">
+          <h3>{{ 'vehicle.details.wellnessSummary' | translate }}</h3>
+          <span class="wellness-status"
+                [class.good]="wellnessSummary.status === 'GOOD'"
+                [class.warning]="wellnessSummary.status === 'WARNING'"
+                [class.critical]="wellnessSummary.status === 'CRITICAL'">
+        {{ wellnessSummary.status }}
+      </span>
+        </div>
+      </div>
+
+      <div class="wellness-body">
+        {{ wellnessSummary.summary }}
+      </div>
+    </div>
   </div>
 </div>

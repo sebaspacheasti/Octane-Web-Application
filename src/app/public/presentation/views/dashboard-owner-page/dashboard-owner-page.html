@@ -43,19 +43,10 @@
 
     <div class="dashboard-card bills-area">
       <div class="card-header orange">
-        <h3 class="card-title">{{ 'dashboard.owner.recentExpenses' | translate }}</h3>
-        <span class="count-pill dark">{{ ownerExpenses().length }}</span>
+        <h3 class="card-title">{{ 'dashboard.owner.wellnessSummaries' | translate }}</h3>
       </div>
       <div class="card-body scrollable">
-        @for (expense of ownerExpenses(); track expense.id) {
-          <div class="list-item expense-item" [routerLink]="['/expenses', expense.id]">
-            <div class="item-info">
-              <span class="item-title">{{ expense.name }}</span>
-              <span class="item-sub">{{ expense.expenseType }}</span>
-            </div>
-            <span class="price-tag">$ {{ expense.finalPrice }}</span>
-          </div>
-        }
+        <app-wellness-summary-list></app-wellness-summary-list>
       </div>
     </div>
 

@@ -42,7 +42,7 @@
       "subtitle": "Resumen de tus vehículos y servicios",
       "assignedMechanic": "Mecánico Asignado",
       "myVehicles": "Mis Vehículos",
-      "recentExpenses": "Gastos Recientes",
+      "wellnessSummaries": "Resúmenes del Bienestar",
       "scheduledMaintenances": "Mantenimientos Programados"
     },
     "mechanic": {
@@ -115,7 +115,8 @@
       "fuelTank": "Tanque",
       "weight": "Peso",
       "consumption": "Consumo",
-      "connectivity": "Conectividad"
+      "connectivity": "Conectividad",
+      "wellnessSummary": "Resumen de Bienestar"
     }
   },
   "assignments": {

@@ -1,0 +1,11 @@
+<div class="wellness-list">
+  @for (summary of summaries; track summary.vehicleId) {
+    <app-wellness-summary-item
+      [wellnessSummary]="summary">
+    </app-wellness-summary-item>
+  } @empty {
+    <div class="empty-state">
+      No wellness summaries available.
+    </div>
+  }
+</div>

@@ -7,6 +7,9 @@ import {DatePipe, NgOptimizedImage} from '@angular/common';
 import {RouterLink} from '@angular/router';
 import {Vehicle} from '@app/comparatives/model/model';
 import {TranslatePipe} from '@ngx-translate/core';
+import {
+  WellnessSummaryList
+} from '@app/vehicle-wellness/presentation/components/wellness-summary-list/wellness-summary-list';
 
 @Component({
   selector: 'app-dashboard-owner-page',
@@ -14,7 +17,8 @@ import {TranslatePipe} from '@ngx-translate/core';
     NgOptimizedImage,
     RouterLink,
     DatePipe,
-    TranslatePipe
+    TranslatePipe,
+    WellnessSummaryList
   ],
   templateUrl: './dashboard-owner-page.html',
   standalone: true,
