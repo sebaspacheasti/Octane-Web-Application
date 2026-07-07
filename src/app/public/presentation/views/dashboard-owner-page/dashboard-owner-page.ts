@@ -10,6 +10,7 @@ import {TranslatePipe} from '@ngx-translate/core';
 import {
   WellnessSummaryList
 } from '@app/vehicle-wellness/presentation/components/wellness-summary-list/wellness-summary-list';
+import {SummariesStore} from '@app/vehicle-wellness/application/summaries.store';
 
 @Component({
   selector: 'app-dashboard-owner-page',
@@ -30,6 +31,7 @@ export class DashboardOwnerPage implements OnInit {
   private vehiclesStore = inject(VehiclesStore);
   private maintenanceStore = inject(MaintenanceStore);
   private expenseStore = inject(ExpenseStore);
+  private wellnessSummaryStore = inject(SummariesStore);
 
   ngOnInit() {
     const roleId = localStorage.getItem("role_id");
@@ -42,10 +44,14 @@ export class DashboardOwnerPage implements OnInit {
         vehicles.forEach((vehicle) => {
           this.maintenanceStore.loadMaintenancesByVehicleId(vehicle.id);
         })
+        this.wellnessSummaryStore.loadSummariesForOwner();
       }, 500)
     }
   }
 
+  generateSummary(vehicleId: number) {
+    this.wellnessSummaryStore.generateSummaryForVehicle(vehicleId);
+  }
 
   get ownerAssignment() {
     return this.store.ownerAssignment;

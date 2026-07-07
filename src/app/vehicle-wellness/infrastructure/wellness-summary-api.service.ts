@@ -28,4 +28,11 @@ export class WellnessSummaryApiService {
         map(resource => WellnessSummaryAssembler.toEntitiesFromResponse(resource))
       );
   }
+
+  generateSummaryForVehicle(vehicleId: number): Observable<WellnessSummary> {
+    return this.http.post<WellnessSummaryResource>(`${this.baseUrl}/${vehicleId}/wellness-summary`, {})
+      .pipe(
+        map(resource => WellnessSummaryAssembler.toEntityFromResource(resource))
+      );
+  }
 }

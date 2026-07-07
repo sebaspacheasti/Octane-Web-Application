@@ -35,6 +35,12 @@
               <span class="item-title">{{ vehicle.model?.name }}</span>
               <span class="item-sub">{{ vehicle.plate }}</span>
             </div>
+            <button type="button" class="generate-summary-btn"
+                    (click)="$event.preventDefault();
+                    $event.stopPropagation();
+                    generateSummary(vehicle.id)">
+              Generate summary
+            </button>
             <span class="arrow-icon">→</span>
           </div>
         }
