@@ -89,11 +89,12 @@ export class VehicleDetailsPage implements OnInit {
   }
 
   navigateToMetrics() {
-    if (this.vehicle?.id) {
-      this.router.navigate(['/wellness-metrics'], {
-        queryParams: {vehicleId: this.vehicle.id}
-      });
-    }
+    // TODO: Uncomment when vehicle-wellness module is ready and route is enabled
+    // if (this.vehicle?.id) {
+    //   this.router.navigate(['/wellness-metrics'], {
+    //     queryParams: {vehicleId: this.vehicle.id}
+    //   });
+    // }
     console.warn('⚠️ Wellness metrics feature is temporarily disabled. Awaiting full module implementation.');
   }
 

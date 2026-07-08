@@ -7,7 +7,8 @@ import {SignUpPage} from '@app/iam/presentation/views/sign-up/sign-up.page';
 import {DashboardMechanicPage} from '@app/public/presentation/views/dashboard-mechanic-page/dashboard-mechanic-page';
 import {RoleSelectionPage} from '@app/iam/presentation/views/role-selection/role-selection.page';
 import {VerifyOwner} from '@app/iam/presentation/views/verify-owner/verify-owner';
-import {WellnessMetricPage} from '@app/vehicle-wellness/presentation/views/wellness-metric-page/wellness-metric-page';
+// TODO: Uncomment when vehicle-wellness module is fully implemented
+// import {WellnessMetricPage} from '@app/vehicle-wellness/presentation/views/wellness-metric-page/wellness-metric-page';
 import {ComparePageComponent} from '@app/comparatives/pages/compare-page/compare-page.component';
 import {CompareMechanicComponent} from '@app/comparatives/pages/compare-mechanic/compare-mechanic.component';
 import {authenticationGuard} from '@app/iam/services/authentication.guard';
@@ -34,5 +35,5 @@ export const routes: Routes = [
   { path: "vehicles", component: VehiclesPage, canActivate: [authenticationGuard] },
   { path: "vehicle/:vehicleId/:role", component: VehicleDetailsPage, canActivate: [authenticationGuard] },
   // TODO: Uncomment when vehicle-wellness module is ready
-  {path: 'wellness-metrics',component: WellnessMetricPage, canActivate: [authenticationGuard] }
+  // {path: 'wellness-metrics',component: WellnessMetricPage, canActivate: [authenticationGuard] }
 ];
