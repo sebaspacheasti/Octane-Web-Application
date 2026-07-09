@@ -9,7 +9,7 @@ import {
   WellnessMetricsResponse
 } from '@app/vehicle-wellness/infrastructure/wellness-metrics.response';
 import {WellnessMetricAssembler} from '@app/vehicle-wellness/infrastructure/wellness-metric.assembler';
-import {MOCK_WELLNESS_METRICS, getMockMetricsByVehicleId, generateRandomMockMetric} from '@app/vehicle-wellness/infrastructure/wellness-metric-mock.data';
+import {MOCK_WELLNESS_METRICS, getMockMetricsByVehicleId} from '@app/vehicle-wellness/infrastructure/wellness-metric-mock.data';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,7 @@ export class WellnessMetricApiService {
   private http = inject(HttpClient);
 
   // TODO: Remove this flag when backend is ready. Set to true to use real API calls.
-  private USE_MOCK_DATA = true;
+  private USE_MOCK_DATA = false;
 
   getWellnessMetricById(id: number): Observable<WellnessMetric>{
     if (this.USE_MOCK_DATA) {
